@@ -1,0 +1,614 @@
+
+/* Global */
+*{
+	-webkit-box-size : border-box;
+	-moz-box-size : border-box;
+	box-size : border-box;
+
+	font-family: 'Open Sans';
+
+}
+
+
+
+
+button:focus { outline:0 !important; }
+
+.show-button:focus,
+.headerbtn:focus,
+.our-work .boxes button
+{outline: 0 !important;}
+
+
+body{
+	background-color: #fff;
+	/*height: 3000px;*/
+}
+.container{
+	width: 55%;
+	margin: 0 auto;
+	top: 0;
+	height: 100%;
+	position: relative;
+
+	
+}
+
+
+/* Start Header */
+.header{
+	background: url('../images/header.jpg');
+	background-size: cover;
+	position: relative;
+}
+.header .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(60, 58, 58, 0.86);
+}
+.header .navbar{
+	color: #A6ABB1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%
+}
+.header .navbar .logo{
+	float: left;
+}
+
+.header .navbar .menu{
+	float: right;
+}
+.header .menu h4{
+	display: inline-block;
+	margin-right: 5px;
+}
+.header .header-content{
+	text-align: center;
+    width: 70%;
+    height: 200px;
+    margin:0 auto;
+    color: #FBFCFE;
+    display: table-cell;
+    vertical-align: middle;
+}
+.header .header-content h1{
+	font-size: 2.5em
+}
+.header .header-content p{
+	color: #c2c4c5;
+	line-height: 1.5em;
+	padding: 0 100px;
+
+}
+.header .header-content button{
+    padding: 8px;
+    background-color: transparent;
+    color: #dcded9;
+    font-size: .7em;
+    border-color: #dcded9;
+    border-radius: 6px;
+    width: 140px;
+    margin: 20px 10px;
+    cursor: pointer;
+    -webkit-transition :background-color 0.5s, border .2s ease-in-out;
+    -moz-transition :background-color 0.5s ,border .2s ease-in-out;
+    transition :background-color 0.5s ,border .2s ease-in-out ;
+}
+
+
+.header .fa-chevron-circle-down{
+	bottom: 20px;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	font-size: 1.4em;
+	cursor: pointer;
+}
+/* End Header */
+
+
+/* Start Features */
+.features {
+	overflow: hidden;
+	height: 380px;
+
+}
+.features .box{
+	display: flex;
+	margin-top: 12%
+
+}
+.features .element{
+	margin-right: 2%
+	width: 19%;
+	text-align: center;
+}
+.features .element:last-child{
+	margin-right: 0
+}
+.features .element .icon {
+	border: 1px solid #ccc;
+	border-radius: 50%;
+    padding: 25px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+
+}
+
+.features .element p{
+	font-size: 11px;
+	padding: 5px 37px;
+}
+/* End Features */
+
+/* Start Subscribe */
+.subscribe {
+	height: 6%;
+	background:url(../images/header.jpg);
+	background-size: cover;
+}
+.subscribe .overlay{
+	background-color: rgba(60, 58, 58, 0.86);
+	height: 100%;
+	width: 100%;
+}
+.subscribe form{
+	margin: auto;
+	padding: 80px 0;
+	text-align: center;
+
+}
+
+.subscribe form .sub-text{
+	
+    padding: 7px 10px;
+    border-radius: 9px;
+    border: 1px solid #fff;
+    margin-right: 20px;
+    width: 300px;
+   
+}
+.subscribe form .subs-btn{
+	padding: 7px 50px;
+    border-radius: 9px;
+    border: none;
+    color: #fff
+}
+    
+.subscribe ::-webkit-input-placeholder{
+	font-size: 14px;
+	color: #ccc
+}   
+.subscribe ::-moz-input-placeholder{
+	font-size: 14px;
+	color: #ccc
+}  
+.subscribe ::-ms-input-placeholder{
+	font-size: 14px;
+	color: #ccc
+}   
+/* End Subscribe */
+
+
+
+/* Start Our Work */
+.our-work{
+	text-align: center;
+}
+.our-work .title{
+	margin: auto;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+.our-work .boxes{
+	overflow: hidden;
+}
+.our-work .boxes .work{
+	width: 30%;
+	float: left;
+	height: 230px;
+	margin-right: 3.3333%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.our-work .boxes .work:hover .overlay{
+	display: block;
+}
+.our-work .boxes .work img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px
+}
+.our-work .show-button{
+	padding: 10px 30px;
+	font-size: 10px;
+	background-color:transparent;
+	border-radius: 10px;
+	text-align: center;
+	margin: 40px;
+	cursor: pointer;
+
+}
+.our-work .boxes .overlay{
+	background-color: rgba(255, 123, 72, 0.87);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+	color: #fff;
+	
+}
+.our-work .boxes .overlay h4{
+
+    margin-top: 50px;
+}
+.our-work .boxes .overlay p{
+	width: 70%;
+    margin: 20px auto;
+    font-size: 11px;
+    
+}
+.our-work .boxes .overlay button{
+	padding: 10px ;
+	color: #fff;
+	font-size: 10px;
+	background-color: transparent;
+	width: 150px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.our-work .boxes .overlay button:hover{
+	background-color: #fff;
+	color: #F25E2A
+}
+
+/* End Our Work */
+
+
+/* Start Testimonials */
+
+.testimonials{
+	background: url('../images/header.jpg');
+	height: 350px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	color: #BDC1C4;
+	position: relative;
+}
+
+.testimonials .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(60, 58, 58, 0.86);
+}
+.testimonials .testi{
+	width: 45%;
+	margin: auto;
+	text-align: center;
+	margin-top: 70px;
+	line-height: 27px;
+	display: none;
+}
+.testimonials .testi.active{
+	display: block;
+}
+.testimonials .testi img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%
+}
+.testimonials .testi-arrow{
+	position: absolute;
+	top: 50%;
+	color: #687075;
+	cursor: pointer;
+}
+.testimonials .testi-arrow.fa-chevron-right{
+	right: 200px
+}
+.testimonials .testi-arrow.fa-chevron-left{
+	left: 200px;
+	display: none
+}
+
+/* End Testimonials */
+
+
+
+
+
+
+/* Start our team */
+.our-team{
+	height: 600px;
+}
+.our-team .title{
+	width: 50%;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+
+/* Start Slider */
+
+.team-slider .bx-wrapper {
+	height: 100%;
+	padding: 20px;
+	width: 92%
+
+}
+.team-slider .bx-wrapper .bx-prev{
+	left: -45px;
+}
+.team-slider .bx-wrapper .bx-next{
+	right: -45px;
+}
+
+.team-slider .members .member {
+	text-align: center;
+	width: 20%;
+	float: left;
+	margin-right: 5%;
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.team-slider .members .member:hover{
+	-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+.team-slider .members .member:hover img{
+	border-bottom: 5px solid #F25E2A;
+	border-radius:5% 5% 0 0;
+	transform: scale(1.1 ,1.1)
+}
+.team-slider .members .member h5{
+	font-size: 17px;
+    margin: 14px;
+    width: 95%;
+    color: #777
+}
+.team-slider .members .member p{
+	font-size: 13px;
+	color: #808183;
+   
+}
+.team-slider .members .member img{
+	width: 150px;
+	height: 170px;
+	border-radius: 5%;
+	transition: all .2s ease-in-out;
+}
+/* End Slider */
+
+
+
+
+
+
+
+/*.our-team .members{
+	margin-top:40px;
+	overflow: hidden;
+	width: 100%
+}
+.our-team .members .member {
+	text-align: center;
+	width: 20%;
+	float: left;
+	margin-right: 5%;
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.our-team .members .member:hover{
+	-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+.our-team .members .member:hover img{
+	border-bottom: 5px solid #F25E2A;
+	border-radius:5% 5% 0 0;
+	transform: scale(1.1 ,1.1)
+}
+.our-team .members .member h5{
+	font-size: 17px;
+    margin: 14px;
+    width: 95%;
+    color: #777
+}
+.our-team .members .member p{
+	font-size: 13px;
+	color: #808183;
+   
+}
+.our-team .members .member img{
+	width: 150px;
+	height: 170px;
+	border-radius: 5%;
+	transition: all .2s ease-in-out;
+}*/
+
+/* End our team */
+
+
+
+
+
+
+/* Start Hire US */
+.hire{
+	height: 600px;
+	position: relative;
+	background: url('../images/hire.jpg');
+	color: #fff
+}
+.hire .overlay{
+	background-color:rgba(60, 58, 58, 0.86);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.hire .title{
+	width: 60%;
+	margin: 70px auto;
+	text-align: center;
+}
+.hire .hire-form{
+	width: 80%;
+	text-align: center;
+	margin: auto;
+}
+.hire .hire-form input[type="email"]{
+	width: 45%;
+	float: left;
+	border-radius: 10px;
+	padding: 6px
+
+}
+.hire .hire-form input[type="text"]{
+	margin-left: 5%;
+    width: 43%;
+    float: right;
+    border-radius: 10px;
+    padding: 6px
+
+
+}
+.hire .hire-form textarea{
+	width: 97%;
+	height: 150px;
+	margin: 25px 0;
+	border-radius: 10px;
+	padding: 6px
+}
+.hire .hire-form button{
+	float: left;
+	border-radius: 10px;
+	padding: 8px;
+    width: 164px;
+    color: #fff;
+    border-color: transparent;
+    cursor: pointer;
+
+}
+.hire .hire-form .icons{
+	float: right;
+}
+.hire .hire-form .icons .i{
+	margin-left :10px;
+}
+/* End Hire Us */
+
+
+
+
+
+
+
+/* Start Footer */
+.footer{
+	
+	background-color: #303335;
+	color: #808183;
+	margin-top: 0;
+	padding: 25px
+}
+.footer h5{
+	margin: 0;
+	display: inline-block;
+}
+.footer h5.two{
+	float: right;
+}
+/* End Footer */
+
+/* Up button */
+.up{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	border:2px solid #000;
+	display: block;
+	padding: 3px 5px;
+	display:none;
+	cursor: pointer;
+}
+
+
+
+
+
+/* Start Framework */
+.upper{
+	text-transform: uppercase;
+}
+
+.main-color{
+	color: #F25E2A
+}
+.minor_color{
+	color: #808183;
+}
+.main-background{
+	background-color: #F25E2A
+}
+.table{
+	height: 100%;
+	display: table;
+
+}
+.table-row{
+	display: table-row;
+
+	height: 100%
+}
+.hidden{
+	display: none;
+}
+.hover{
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	transition:all .5s;
+}
+.hover:hover{
+	background-color: #F25E2A !important;
+	border-color :#F25E2A !important;
+	color: #fff;
+}
+.i.fa-facebook{
+	color: #3b5998 
+}
+.i.fa-twitter{
+	color: #1da1f2
+}
+.i.fa-google-plus{
+	color: #dd4b39
+}
+/* End Framework */
+
+
+
+
+
+
+
+
